@@ -6,7 +6,7 @@ Implemented locally at `/workspace/RM_Ready_Meals` on 12 November 2026.
 
 | Requested resource         | Result                                                                                                                                                                |
 | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| GitHub repository URL      | Not created. `gh repo create RM_Ready_Meals --private` was rejected: `Resource not accessible by integration (createRepository)`. Authenticated account is `jake864`. |
+| GitHub repository URL | https://github.com/jake864/RM_Ready_Meals — source pushed to `main`. Repository is currently public. |
 | Vercel preview URL         | Not created. No Vercel credentials or connected Vercel integration. Vercel connection was suggested.                                                                  |
 | Supabase project reference | `gcmjcsamonvxgguercge` — RM — Ready Meals, Sydney, ACTIVE_HEALTHY. Created after explicit approval of the quoted $10/month cost.                                      |
 
@@ -42,7 +42,7 @@ An actual Stripe sandbox payment, Vercel deployment verification, and physical p
 
 ## Remaining limitations and next steps
 
-See [SETUP.md](SETUP.md) for exact steps and environment variables. Create/authorize the new private GitHub repo, connect Vercel and configure RM’s server secret key securely; Supabase creation, migration and database verification are complete, and deploy a private branch preview. Configure only RM's own sandbox secrets in secure project settings. Add a verified administrator UUID. Enable test checkout only after webhook delivery is working.
+See [SETUP.md](SETUP.md) for exact steps and environment variables. The GitHub source is published; connect Vercel and configure RM’s server secret key securely; Supabase creation, migration and database verification are complete, and deploy a private branch preview. Configure only RM's own sandbox secrets in secure project settings. Add a verified administrator UUID. Enable test checkout only after webhook delivery is working.
 
 Run hosted acceptance checks for auth, payment success/decline/replay/expiry, stock caps, cutoff, mobile display and physical print output. Reconcile any orphan pending reservations against Stripe before releasing them. Hosted Supabase advisor checks and type generation are complete. Configure email delivery and approve recipes, allergens, prices, nutrition and collection times before customer use.
 

@@ -2,7 +2,7 @@
 
 ## External access still needed
 
-1. **GitHub:** the connected account is `jake864`, but repository creation returned `Resource not accessible by integration (createRepository)`. Create a new **private** repository named `RM_Ready_Meals`, authorize this integration for that repository, and push this source. Do not select WodFlow or FarmDog Ops.
+1. **GitHub:** https://github.com/jake864/RM_Ready_Meals is ready and source is pushed to `main`. GitHub reports the repository as public. Local environment files are ignored and excluded.
 2. **Supabase:** created successfully after approval of the quoted $10/month cost. Project `gcmjcsamonvxgguercge`, name `RM — Ready Meals`, Sydney (`ap-southeast-2`), healthy. The initial migration and 90-day batch seed are already applied and verified. Do not reapply the initial schema. Set this project’s server secret key securely as `SUPABASE_SECRET_KEY`; the available tools expose only publishable keys. Local `.env.local` has the new project URL and publishable key, and is Git-ignored.
 3. **Vercel:** install/connect the Vercel integration or authenticate the Vercel CLI. Import the new GitHub repository as a **new** Vercel project with framework **Next.js** and Node 24. Deploy a branch preview. No Vercel project or deployment was created in this session.
 
