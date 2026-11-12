@@ -3,7 +3,7 @@
 ## External access still needed
 
 1. **GitHub:** the connected account is `jake864`, but repository creation returned `Resource not accessible by integration (createRepository)`. Create a new **private** repository named `RM_Ready_Meals`, authorize this integration for that repository, and push this source. Do not select WodFlow or FarmDog Ops.
-2. **Supabase:** select the intended organization. `jake864's Org` was found, but organization choice is required by the project-creation tool and is awaiting your response. Create a new project named `RM — Ready Meals`, preferably Sydney (`ap-southeast-2`). Review any quoted costs before creation; no project has been created and no existing database was changed.
+2. **Supabase:** the user approved `jake864's Org` and Sydney. Project creation was attempted, but its native confirmation returned `Project creation was declined`. Creation is stopped; complete/approve that native confirmation before retrying. Create a new project named `RM — Ready Meals`, preferably Sydney (`ap-southeast-2`). Review any quoted costs before creation; no project has been created and no existing database was changed.
 3. **Vercel:** install/connect the Vercel integration or authenticate the Vercel CLI. Import the new GitHub repository as a **new** Vercel project with framework **Next.js** and Node 24. Deploy a branch preview. No Vercel project or deployment was created in this session.
 
 ## New Supabase project

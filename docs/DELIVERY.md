@@ -8,7 +8,7 @@ Implemented locally at `/workspace/RM_Ready_Meals` on 12 November 2026.
 | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | GitHub repository URL      | Not created. `gh repo create RM_Ready_Meals --private` was rejected: `Resource not accessible by integration (createRepository)`. Authenticated account is `jake864`. |
 | Vercel preview URL         | Not created. No Vercel credentials or connected Vercel integration. Vercel connection was suggested.                                                                  |
-| Supabase project reference | Not created. Organization `jake864's Org` (`nlcjarhorwztzeyvmunr`) was discovered; required explicit organization choice is pending. No cost was incurred.            |
+| Supabase project reference | Not created. Organization `jake864's Org` (`nlcjarhorwztzeyvmunr`) was discovered; organization choice was approved for Sydney, but the native project-creation confirmation returned `Project creation was declined`. No project was created or cost incurred.            |
 
 No WodFlow, FarmDog Ops, existing Supabase schema, or unrelated credentials were modified/reused.
 
@@ -40,7 +40,7 @@ These are local tests, not hosted Supabase acceptance, an actual Stripe sandbox 
 
 ## Remaining limitations and next steps
 
-See [SETUP.md](SETUP.md) for exact steps and environment variables. Create/authorize the new private GitHub repo, select the new Supabase organization/project, connect Vercel, apply and verify the migrations against the new project, and deploy a private branch preview. Configure only RM's own sandbox secrets in secure project settings. Add a verified administrator UUID. Enable test checkout only after webhook delivery is working.
+See [SETUP.md](SETUP.md) for exact steps and environment variables. Create/authorize the new private GitHub repo, complete the Supabase project-creation confirmation for the approved organization/Sydney region, connect Vercel, apply and verify the migrations against the new project, and deploy a private branch preview. Configure only RM's own sandbox secrets in secure project settings. Add a verified administrator UUID. Enable test checkout only after webhook delivery is working.
 
 Run hosted acceptance checks for auth, payment success/decline/replay/expiry, stock caps, cutoff, mobile display and physical print output. Reconcile any orphan pending reservations against Stripe before releasing them. Complete hosted Supabase advisor checks and type generation. Configure email delivery and approve recipes, allergens, prices, nutrition and collection times before customer use.
 
