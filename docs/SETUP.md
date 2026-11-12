@@ -3,12 +3,12 @@
 ## External access still needed
 
 1. **GitHub:** the connected account is `jake864`, but repository creation returned `Resource not accessible by integration (createRepository)`. Create a new **private** repository named `RM_Ready_Meals`, authorize this integration for that repository, and push this source. Do not select WodFlow or FarmDog Ops.
-2. **Supabase:** the user approved `jake864's Org` and Sydney. Project creation was attempted, but its native confirmation returned `Project creation was declined`. Creation is stopped; complete/approve that native confirmation before retrying. Create a new project named `RM — Ready Meals`, preferably Sydney (`ap-southeast-2`). Review any quoted costs before creation; no project has been created and no existing database was changed.
+2. **Supabase:** created successfully after approval of the quoted $10/month cost. Project `gcmjcsamonvxgguercge`, name `RM — Ready Meals`, Sydney (`ap-southeast-2`), healthy. The initial migration and 90-day batch seed are already applied and verified. Do not reapply the initial schema. Set this project’s server secret key securely as `SUPABASE_SECRET_KEY`; the available tools expose only publishable keys. Local `.env.local` has the new project URL and publishable key, and is Git-ignored.
 3. **Vercel:** install/connect the Vercel integration or authenticate the Vercel CLI. Import the new GitHub repository as a **new** Vercel project with framework **Next.js** and Node 24. Deploy a branch preview. No Vercel project or deployment was created in this session.
 
 ## New Supabase project
 
-Run `supabase/migrations/20261112071332_initial_rm_schema.sql` and then `docs/seed-batches.sql` in the **new RM project's** SQL editor. The migration was generated with Supabase CLI v2.81.3 and has been executed successfully in embedded Postgres; it has not been verified against a hosted Supabase project.
+The initial migration and `docs/seed-batches.sql` are already applied to `gcmjcsamonvxgguercge` and hosted database verification passed. The migration was generated with Supabase CLI v2.81.3. The following CLI notes are for subsequent migrations or rebuilding a separate test environment.
 
 Alternatively install/pin CLI v2.81.3, inspect `supabase link --help` / `supabase db push --help`, link only the new RM project, and push the tracked migration. CLI v3 changed hosted-target flags, so do not assume v2 commands apply to v3.
 
